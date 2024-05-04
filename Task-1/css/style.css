@@ -1,0 +1,104 @@
+:root{
+    --p-c: #23262F;
+    --p-c-2: #777E90;
+    --p-f-r: 'Poppins-reguler';
+    --p-f-m: 'Poppins-medium';
+    --p-f-s: 'Poppins-semibold';
+    --p-f-b: 'Poppins-bold';
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.content__wrapper{
+    padding: 136px 160px 56px 160px;
+    max-width: 1120px;
+}
+.cards__title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.title{
+    font-family: 'Dm-sans';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--p-c);
+}
+.subtitle{
+    font-family: var(--p-f-r);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    color: var(--p-c-2);
+    padding-top: 12px;
+}
+.arrows__wrapper{
+    display: flex;
+    gap: 21px;
+}
+.cards__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 1120px;
+}
+.card{
+    position: relative;
+}
+
+.card:hover .discount {
+    background-color: #FFFFFF;
+    color: #23262F;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card img{
+    border-radius: 24px;
+}
+
+.discount{
+    font-family: var(--p-f-b);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+    padding: 8px 12px 6px 12px;
+    border-radius: 32px;
+    color: #FCFCFD;
+    position: absolute;
+    background-color: var(--p-c);
+    top: 16px;
+    left: 16px;
+    box-shadow: 0px 8px 16px -8px #0F0F0F1A;
+}
+.card__title{
+    color: var(--p-c);
+    padding: 21px 0px 8px 0px;
+    font-family: var(--p-f-m);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: var(--p-c);
+}
+.count{
+    display: flex;
+    align-items: center;   
+    gap: 6px;
+}
+.counter{
+    font-family: var(--p-f-s);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: var(--p-c-2);
+}
